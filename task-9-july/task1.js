@@ -24,7 +24,7 @@ let number =["12, 13, 14"];
 console.log(number[0]);
 
 let no = [12, 20, 30];
-console.log(no[no.length-3]);
+console.log(no[no.length-1]);
 
 var array = [0,5,7,9];
 array.shift();
@@ -32,7 +32,7 @@ array.shift();
 array.shift();
 array.unshift(1,3,4,6,8);
 array.push(10);
-console.log(array)
+console.log(array);
 
 var array2 =[0,5,7,9];
 array2.shift();
@@ -44,7 +44,7 @@ array2.shift();
     console.log(array2);
 
     var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1 ];
-    arr1 = arr1.sort(function (a,b) {;
-        return(a-b)});
+    arr1.sort();
+    arr1.splice(0,2,-4,-3);
         console.log(arr1);
     
