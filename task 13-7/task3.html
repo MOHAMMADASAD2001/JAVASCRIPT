@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+
+<body>
+    <form>
+        <ul style="list-style: none;">
+            <li>
+                <select onchange="font_family()" id="family" style="width: 150px;">
+                    <option value="1">Times New Roman</option>
+                    <option value="2">fantasy</option>
+                    <option value="3">Arial</option>
+                </select>
+                <select onchange="font_weight()" id="weight" style="width: 60px;">
+                    <option value="1" selected>10px</option>
+                    <option value="2">15px</option>
+                    <option value="3">20px</option>
+                    <option value="4">25px</option>
+                </select>
+                <input onclick="Italic_box()" type="checkbox" id="Italic" name="Italic" value="Italic">
+                <label for="vehicle1">Italic</label>
+                <input onclick="Bold_box()" type="checkbox" id="Bold" name="Bold" value="Bold">
+                <label for="vehicle2">Bold</label>
+                <input onclick="Underline_box()" type="checkbox" id="Underline" name="Underline" value="Underline">
+                <label for="vehicle3">Underline</label>
+            </li>
+            <br>
+            <li>
+                <textarea id="text" name="user_message" style="resize: none; width: 600px; height: 200px;"></textarea>
+            </li>
+        </ul>
+    </form>
+    <script src="task3.js"></script>
+</body>
+</html>

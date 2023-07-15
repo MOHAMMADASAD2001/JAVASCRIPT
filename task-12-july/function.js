@@ -144,7 +144,7 @@ function multiply(rr,Rr){
 GG = rr * Rr;
 console.log(GG)
 }
-multiply(3,4);
+multiply(3,4 );
 multiply(5,4)
 /*
 9
