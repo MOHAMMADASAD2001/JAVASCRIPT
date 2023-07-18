@@ -1,0 +1,7 @@
+{
+    "names": ["mohammad", "sami", "malik", "ahmad ", "hasan ", "ali"],
+    "ages": [21, 27, 25, 24, 22, 28],
+    "majors": ["communication and computer network", "Electrical Engineering", "chemistry ", "mathematic ", "english ", "Computer network"],
+    "universities": ["alhoson", "YU", "YU", "JUST", "YU", "YU"],
+    "image" : ["test.jpg"]
+}

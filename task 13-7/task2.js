@@ -3,10 +3,8 @@ flag.style.display = "block";
 
 let image =document.createElement("img");
 image.src ="jordan.jpg";
-document.appendChild("image");
+document.body.appendChild(image)
 image.style.width = "200px";
-
-
 flag.addEventListener("change", () =>{
     let selectedIndex = flag.selectedIndex;
     let selectedValue = flag.options[selectedIndex].text;
@@ -17,3 +15,6 @@ flag.addEventListener("change", () =>{
         image.src="jordan.jpg";
     }
 });
+let selectedIndex = flag.selectedIndex;
+
+console.log(flag[selectedIndex])

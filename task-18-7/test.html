@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+// console.log("test one");
+
+// window.alert ("test two");
+
+// console.log("test three");
+
+
+// console.log("test one");
+
+// window.setTimeout (()=> console.log("test two"), 1000);
+// window.setTimeout (()=> console.log("test three"), 3000);
+// console.log("test four");
+
+
+// function myFunction() {
+//   console.log("Hello, world!");
+// }
+
+// const intervalId = setInterval(myFunction, 1000);
+
+// // To stop the interval after a certain time
+// setTimeout(() => {
+//   clearInterval(intervalId);
+// }, 7000);
+
+const myPromise = new Promise((resolve, reject) => {
+  // Perform some asynchronous operation
+  setTimeout(() => {
+    const data = "Hello, world!";
+    resolve(data);
+  }, 2000);
+});
+
+myPromise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+    </script>
+</body>
+</html>

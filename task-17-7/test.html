@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="date">
+<div id="name"></div>
+<div id="age"></div>
+    </div> -->
+<div id="show"></div>
+    <script>
+let myjsonobject = `{"username": "mohammad", "age": 22}`;
+let myjsobject = JSON.parse (myjsonobject);
+
+// console.log(myjsonobject);
+// console.log(typeof myjsonobject);
+
+// console.log(myjsobject);
+// console.log(typeof myjsobject);
+
+
+let object = {username: "mohammad", age: 22};
+let json = JSON.stringify(myjsonobject);
+
+
+console.log(object);
+console.log(typeof object);
+
+console.log(json);
+console.log(typeof json);
+
+
+// let myjsonobject = `{"username": "mohammad", "age": 22}`;
+// let myjsobject = JSON.parse (myjsonobject);
+
+// document.getElementById ("name").innerHTML = "my name is " + myjsobject.username;
+// document.getElementById ("age").innerHTML = "my name is " + myjsobject.age;
+
+
+$(function (){
+$. getjson("task.json", function (data){
+    console.log(data);
+    var content ="";
+    for (var x in data){
+        content += data [x].names + "<br>";
+    }
+    console.log(content);
+    $ ("#show").html(content);
+
+});
+});
+
+    </script>
+</body>
+</html>
