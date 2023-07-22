@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+}
+.container{
+    text-align: center;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: none;
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s;
+    border: none;
+    background-color: chocolate;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(249, 192, 70);
+    
+}
+table{
+    width: 100%;
+    line-height: 50px;
+}
+thead{
+    background-color: coral;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <label for="txt">Enter your tasks</label>
+        <input type="text" id="txt" >
+        <button id="btn-add" >Add</button><br><br>
+        <label for="inputsearch">Search</label>
+        <input type="text" id="inputsearch" onkeyup="search(this.value)">
+
+         <hr>
+         <table>
+            <thead><tr>
+                <th>Name</th>
+                <th>Number</th>
+                <th>delete</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody id="information">
+               
+            </tbody>
+         </table>
+
+    </div>
+    <script src="/crud/javascriptcrud.js"></script>
+</body>
+</html>
