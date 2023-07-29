@@ -6,10 +6,21 @@ console.log('Here is : ', 'Object')
 Create an object represents you
 have your first name, last name, age, dob(date of birth), favorite food (3),favorite movie (5)
 */
+const myinformation ={
+  firstname: "mohammad",
+  lastname:"abd",
+  age:21,
+  dob:26/12/2001,
+  favoritefood:["pizza,burgar,mansaf"],
+  favoritemovie:["fastx,fastx,fastx,fastx,fastx"],
+}
+console.log(myinformation.lastname); 
+console.log(myinformation.age); 
+console.log(myinformation.dob); 
 
+console.log(myinformation.favoritefood); 
 
-
-
+console.log(myinformation.favoritemovie); 
 
 
 var persons = [

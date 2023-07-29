@@ -1,28 +1,28 @@
 //Implement all the ecxersices using Javascript ES6
 
 // Excersice 1: Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. 
-// let object = {
-//     name:"mohammad",
-//     lastname:"abd",
-//      age: 22,
+let object = {
+    name:"mohammad",
+    lastname:"abd",
+     age: 22,
     
-// }
-// let object2 = {
-//     name:"mohammad",  
-//     lastname:"abd",
-//      age: 22,
-// }
-// function comm() {
-//     for (const key in object) {
-//         if(object[key] === object2[key] ){
-//           return true
+}
+let object2 = {
+    name:"mohammad",  
+    lastname:"abd",
+     age: 22,
+}
+function comm() {
+    for (const key in object) {
+        if(object[key] === object2[key] ){
+          return true
 
-// }else{
-//     return false
-// }
-//  }
-// }
-// console.log(comm());
+}else{
+    return false
+}
+ }
+}
+console.log(comm());
 
 // Excersice 2: Write a JavaScript program to copy a string to the clipboard. 
 

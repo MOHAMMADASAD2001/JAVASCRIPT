@@ -20,11 +20,11 @@ and return average age of this array
 
 Ex: avgAge(persons) => 41.2
 */
-let person=persons.reduce (function (a,b) { 
+// let person=persons.reduce (function (a,b) { 
 
-return (a + b.age)
-},0) /person.length
-console.log(person);
+// return (a + b.age)
+// },0) /persons.length
+// console.log(person);
 /*
 2
 Using the varabile persons
@@ -34,16 +34,16 @@ and return the longerst full name
 
 Ex: longestName(persons) => 'Soso Al-Amora'
 */
-let a = "";
-let b = "";
-function longestName(arr) {
-  let ahmad = arr.reduce(function (acc, cu) {
-    cu = cu.name.first + cu.name.last;
-    return cu.length > acc.length ? `hi ${cu} `: acc;
-  },"");
-  return ahmad;
-}
-console.log(longestName(persons));
+// let a = "";
+// let b = "";
+// function longestName(arr) {
+//   let ahmad = arr.reduce(function (acc, cu) {
+//     cu = cu.name.first + cu.name.last;
+//     return cu.length > acc.length ? `hi ${cu} `: acc;
+//   },"");
+//   return ahmad;
+// }
+// console.log(longestName(persons));
 /*
 3
 Create a function called maxNumber
@@ -52,7 +52,18 @@ and return max number
 
 Ex: maxNumber([1,2,4,9]) => 9
 */
+function maxNumber(arr) {
+  if (!Array.isArray(arr) || arr.length === 0) {
+    // Check if the input is a valid non-empty array
+    throw new Error("Input must be a non-empty array.");
+  }
 
+  // Use the reduce method to find the maximum number in the array
+  const max = arr.reduce((acc, curr) => (curr > acc ? curr : acc), arr[0]);
+
+  return max;
+}
+console.log(maxNumber([1, 2, 4, 9]));
 
 /*
 4
